@@ -1,43 +1,49 @@
-<h1>Hello, rails, this is a calculator... or it will be</h1>
+<h1 class="has-text-centered is-size-1">Hello, rails, this is a calculator... or it will be</h1>
 
-<div class="container">
-  <div class="calculator">
-    <div class="row" id="answer">
+  <div class="column is-8 is-offset-2">
+    <div class="columns">
+      <div class="column is-12 is-black" id="answer">
+
+      </div>
     </div>
 
-    <div class="row first-buttons">
-      <button class="backspace buttons" id="back"><img id="delete" image_path("backspace1.png")></button>
-      <button class="wide C buttons" id="C">C</button>
-      <button class="wide ON buttons" id="start">ON</button>
+    <div class="columns">
+      <button class="button is-large is-info column is-4" id="back">
+        <%= image_tag("backspace1.png") %>
+      </button>
+      <button class="button is-large is-info column is-4" id="C">C</button>
+      <button class="button is-large is-link column is-4" id="start">ON</button>
     </div>
 
-    <div class="row">
-      <button class="buttons" id="7">7</button>
-      <button class="buttons" id="8">8</button>
-      <button class="buttons" id="9">9</button>
-      <button class="divide buttons" id="/">/</button>
-      <button class="square-root buttons" id="squared"><img id="sRoot" image_path("squarerootresize.png")></button>
+    <div class="columns">
+      <button class="is-primary is-large button column is-2" id="7">7</button>
+      <button class="is-primary is-large button column is-2" id="8">8</button>
+      <button class="is-primary is-large button column is-2" id="9">9</button>
+      <button class="is-info is-large button column is-3" id="/">/</button>
+      <button class="is-info is-large button column is-3" id="squared">
+        <%= image_tag("squarerootresize.png") %>
+      </button>
     </div>
 
-    <div class="row">
-      <button class="buttons" id="4">4</button>
-      <button class="buttons" id="5">5</button>
-      <button class="buttons" id="6">6</button>
-      <button class="minus buttons" id="-">-</button>
-      <button class="multiply buttons" id="*">*</button>
+    <div class="columns">
+      <button class="is-primary is-large button column is-2" id="4">4</button>
+      <button class="is-primary is-large button column is-2" id="5">5</button>
+      <button class="is-primary is-large button column is-2" id="6">6</button>
+      <button class="is-info is-large button column is-3" id="-">-</button>
+      <button class="is-info is-large button column is-3" id="*">*</button>
     </div>
 
-    <div class="row">
-      <button class="buttons" id="1">1</button>
-      <button class="buttons" id="2">2</button>
-      <button class="buttons" id="3">3</button>
-      <button class="wide plus buttons" id="+">+</button>
+    <div class="columns">
+      <button class="is-primary is-large button column is-2" id="1">1</button>
+      <button class="is-primary is-large button column is-2" id="2">2</button>
+      <button class="is-primary is-large button column is-2" id="3">3</button>
+      <button class="is-info is-large button column is-3" id="+">+</button>
     </div>
 
-    <div class="row">
-      <button class="wide buttons" id="0">0</button>
-      <button class="buttons" id=".">.</button>
-      <button class="wide equal buttons" id="=">=</button>
+    <div class="columns">
+      <button class="is-primary is-large button column is-3" id=".">.</button>
+      <button class="is-primary is-large button column is-3" id="0">0</button>
+      <button class="is-link is-large button column is-3" id="=">=</button>
     </div>
+
   </div>
-</div>
